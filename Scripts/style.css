@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: gold;
+}
+
+::selection {
+  color: black;
+  background: gold;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: #333a45;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333a45;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #616770;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: gold;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #333a45;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding-top: 70px;
+  column-gap: 10px;
+  padding-bottom: 100px;
+}
+
+/* .container::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+} */
+
+.totals-cont {
+  background-color: #3a414b;
+  text-align: center;
+  padding: 15px 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.daily-cont {
+  background-color: #3a414b;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.son-zamanlar {
+  background-color: #3a414b;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.son-hafta {
+  width: 50%;
+  padding: 10px;
+}
+.son-hafta-report {
+  background-color: #333a45;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.son-hafta-report > div {
+  padding: 10px;
+}
+
+.son-ay {
+  width: 50%;
+  padding: 10px;
+}
+
+.content-cont {
+  background-color: #333a45;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: start;
+}
+
+.news-cont a {
+  text-decoration: none !important;
+}
+
+.main-content-cont {
+  background-color: #3a414b;
+  text-align: center;
+  padding: 15px 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  max-height: 800px;
+  overflow-y: scroll;
+  border-bottom: 10px solid #3a414b;
+  border-top: 10px solid #3a414b;
+}
+
+.main-content-cont::-webkit-scrollbar {
+  display: none;
+}
+
+.news-header {
+  font-size: 16px;
+}
+.news-img {
+  width: 100%;
+  border-radius: 5px;
+}
+.news-description {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.daily-report {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333a45;
+  padding: 20px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.aaa {
+  display: flex;
+  flex-direction: column;
+}
+
+.daily-report > div {
+  padding: 0 20px;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: #21252a;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.nav-bar a {
+  margin: 0 10px;
+}
+
+.flag {
+  width: 50px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.extra {
+  background-color: #3a414b;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.archive {
+  background-color: #3a414b;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 15px 30px;
+  margin-top: 10px;
+  overflow: hidden;
+  max-height: 70vh;
+  border-bottom: 5px solid #3a414b;
+  position: relative;
+}
+
+.haritalar {
+  background-color: #3a414b;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 15px 30px;
+  overflow: hidden;
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+  height: 690px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg path:hover {
+  opacity: 0.8;
+}
+
+path {
+  transition: 0.1s;
+}
+
+svg {
+  transform: scale(1.5);
+  stroke: white;
+  stroke-width: 0.5;
+}
+
+.tooltip {
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  position: fixed;
+  pointer-events: none;
+  transition: 0.1s;
+}
+
+#yy-active {
+  fill: #9c1219 !important;
+}
+
+.tooltip div {
+  color: #333a45;
+  font-weight: 700;
+}
+
+th {
+  text-align: start;
+  background-color: #333a45;
+  font-weight: 700 !important;
+}
+
+th,
+td {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.table-cont {
+  font-size: 0.8em;
+  background-color: #2e353d;
+  border-collapse: collapse;
+  overflow: hidden;
+  min-width: 100%;
+  font-size: 20px;
+}
+
+.denemetb {
+  font-size: 0.8em;
+  background-color: #2e353d;
+  border-collapse: collapse;
+  overflow: hidden;
+  min-width: 100%;
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.table-cont tbody tr:nth-of-type(even) {
+  background-color: #333a45;
+}
+
+.table-vaka {
+  color: #71ffbb;
+}
+.table-vefat {
+  color: #ff7171;
+}
+.table-kritik {
+  color: rgb(255, 170, 72);
+}
+.table-iyilesen {
+  color: rgb(119, 255, 92);
+}
+.table-test {
+  color: aqua;
+}
+
+.aciklama {
+  position: absolute;
+  max-width: 25%;
+  left: 30px;
+  bottom: 20px;
+  text-align: start;
+  font-size: 24px;
+}
+
+.risk-yy-1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+}
+.risk-yy {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  background-color: #df1a23;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-weight: 6 00;
+}
+
+.aciklama:hover:after {
+  content: "Yüz binde 19.99 un altında vaka görülen iller düşük riskli, Yüz binde 20-49.99 arası vaka olan iller orta riskli, Yüz binde 50-99.99 arası vakası bulunan iller yüksek riskli, Yüz binde 100ün üstünde vaka seyri görülen iller ise çok yüksek riskli olarak hesaplanmistir.";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background-color: #333a45;
+  padding: 10px;
+  font-size: 12px;
+  width: 300px;
+}
+
+/* Yüz binde 19.99'un altında vaka görülen iller "düşük riskli",
+Yüz binde 20-49.99 arası vaka olan iller "orta riskli",
+Yüz binde 50-99.99 arası vakası bulunan iller "yüksek riskli",
+Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli" */
