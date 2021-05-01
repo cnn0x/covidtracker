@@ -52,7 +52,7 @@ body {
 
 .container {
   min-height: 100vh;
-  background-color: #333a45;
+  background-color: #161e2c;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
 } */
 
 .totals-cont {
-  background-color: #3a414b;
+  background-color: #1b2435;
   text-align: center;
   padding: 15px 30px;
   border-top-right-radius: 5px;
@@ -77,7 +77,7 @@ body::-webkit-scrollbar {
 }
 
 .daily-cont {
-  background-color: #3a414b;
+  background-color: #1b2435;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 15px 30px;
@@ -85,7 +85,7 @@ body::-webkit-scrollbar {
 }
 
 .son-zamanlar {
-  background-color: #3a414b;
+  background-color: #1b2435;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 5px 20px;
@@ -99,7 +99,7 @@ body::-webkit-scrollbar {
   padding: 10px;
 }
 .son-hafta-report {
-  background-color: #333a45;
+  background-color: #161e2c;
   padding: 10px 20px;
   border-radius: 5px;
   display: flex;
@@ -120,7 +120,7 @@ body::-webkit-scrollbar {
 }
 
 .content-cont {
-  background-color: #333a45;
+  background-color: #161e2c;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 5px;
@@ -132,15 +132,15 @@ body::-webkit-scrollbar {
 }
 
 .main-content-cont {
-  background-color: #3a414b;
+  background-color: #1b2435;
   text-align: center;
   padding: 15px 30px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   max-height: 800px;
   overflow-y: scroll;
-  border-bottom: 10px solid #3a414b;
-  border-top: 10px solid #3a414b;
+  border-bottom: 10px solid #1b2435;
+  border-top: 10px solid #1b2435;
 }
 
 .main-content-cont::-webkit-scrollbar {
@@ -163,7 +163,7 @@ body::-webkit-scrollbar {
 .daily-report {
   display: flex;
   justify-content: space-between;
-  background-color: #333a45;
+  background-color: #161e2c;
   padding: 20px;
   border-radius: 5px;
   flex-wrap: wrap;
@@ -216,19 +216,19 @@ a {
 }
 
 .archive {
-  background-color: #3a414b;
+  background-color: #1b2435;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 15px 30px;
   margin-top: 10px;
   overflow: hidden;
   max-height: 70vh;
-  border-bottom: 5px solid #3a414b;
+  border-bottom: 5px solid #1b2435;
   position: relative;
 }
 
 .haritalar {
-  background-color: #3a414b;
+  background-color: #1b2435;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 15px 30px;
@@ -280,7 +280,7 @@ svg {
 
 th {
   text-align: start;
-  background-color: #333a45;
+  background-color: #161e2c;
   font-weight: 700 !important;
 }
 
@@ -292,7 +292,7 @@ td {
 
 .table-cont {
   font-size: 0.8em;
-  background-color: #2e353d;
+  background-color: #1b2435;
   border-collapse: collapse;
   overflow: hidden;
   min-width: 100%;
@@ -301,7 +301,7 @@ td {
 
 .denemetb {
   font-size: 0.8em;
-  background-color: #2e353d;
+  background-color: #1b2435;
   border-collapse: collapse;
   overflow: hidden;
   min-width: 100%;
@@ -312,23 +312,23 @@ td {
 }
 
 .table-cont tbody tr:nth-of-type(even) {
-  background-color: #333a45;
+  background-color: #161e2c;
 }
 
 .table-vaka {
-  color: #71ffbb;
+  color: #38f3ea;
 }
 .table-vefat {
-  color: #ff7171;
+  color: #f85656;
 }
 .table-kritik {
-  color: rgb(255, 170, 72);
+  color: #ff8a37;
 }
 .table-iyilesen {
-  color: rgb(119, 255, 92);
+  color: rgb(96, 241, 67);
 }
 .table-test {
-  color: aqua;
+  color: rgb(195, 62, 235);
 }
 
 .aciklama {
@@ -361,7 +361,7 @@ td {
   position: absolute;
   bottom: 100%;
   left: 0;
-  background-color: #333a45;
+  background-color: #161e2c;
   padding: 10px;
   font-size: 12px;
   width: 300px;
@@ -540,6 +540,7 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
     flex-direction: column;
     min-height: 100vh;
     padding: 10px;
+    padding-right: 0;
   }
 
   svg {

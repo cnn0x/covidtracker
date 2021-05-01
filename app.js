@@ -8,12 +8,12 @@ const toplamAsi = document.getElementById("toplam-asi");
 const toplamAsiKisi = document.getElementById("toplam-asi-kisi");
 const toplamAsiKisiYuzdesi = document.getElementById("toplam-asi-kisi-yuzdesi");
 
-const gunlukVaka = document.getElementById("gunluk-vaka");
-const gunlukVefat = document.getElementById("gunluk-vefat");
-const gunlukHasta = document.getElementById("gunluk-hasta");
-const gunlukIyilesen = document.getElementById("gunluk-iyilesen");
-const gunlukTest = document.getElementById("gunluk-test");
-const gunlukAsilama = document.getElementById("gunluk-asilama");
+const gunlukVaka = document.querySelectorAll(".gunluk-vaka");
+const gunlukVefat = document.querySelector(".gunluk-vefat");
+const gunlukHasta = document.querySelectorAll(".gunluk-hasta");
+const gunlukIyilesen = document.querySelectorAll(".gunluk-iyilesen");
+const gunlukTest = document.querySelectorAll(".gunluk-test");
+const gunlukAsilama = document.querySelectorAll(".gunluk-asilama");
 
 const haftalikVaka = document.getElementById("haftalik-vaka");
 const haftalikVefat = document.getElementById("haftalik-vefat");
@@ -299,7 +299,6 @@ fetch(
   .then((result) => result.json())
   .then((respond) => {
     for (let i = 0; i < respond.data.length; i++) {
-      // console.log(respond.data[i].image.split(" ")[0]);
       newsContainer.innerHTML +=
         "<a target='_blank' href=" +
         respond.data[i].url +
