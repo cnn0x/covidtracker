@@ -1,5 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
+:root {
+  --clr-navbar: #1a202a;
+  --clr-main: #1b2435;
+  --clr-mainDark: #161e2c;
+  --clr-cases: #38f3ea;
+  --clr-deaths: #f85656;
+  --clr-critical: #ff8a37;
+  --clr-recovered: #60f143;
+  --clr-tested: #c33eeb;
+  --clr-vaccinated: #30acf3;
+}
+
+.clr-cases {
+  color: var(--clr-cases);
+}
+.clr-deaths {
+  color: var(--clr-deaths);
+}
+.clr-critical {
+  color: var(--clr-critical);
+}
+.clr-recovered {
+  color: var(--clr-recovered);
+}
+.clr-tested {
+  color: var(--clr-tested);
+}
+.clr-vaccinated {
+  color: var(--clr-vaccinated);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,12 +41,12 @@
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: black;
+  color: var(--clr-mainDark);
   background: gold;
 }
 
 ::selection {
-  color: black;
+  color: var(--clr-mainDark);
   background: gold;
 }
 
@@ -28,7 +59,7 @@ body {
 .loading {
   width: 100%;
   height: 100vh;
-  background-color: #333a45;
+  background-color: var(--clr-mainDark);
   position: absolute;
   top: 0;
   left: 0;
@@ -40,11 +71,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #333a45;
+  background-color: var(--clr-mainDark);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #616770;
+  background-color: rgb(53, 55, 71);
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: gold;
@@ -52,7 +83,7 @@ body {
 
 .container {
   min-height: 100vh;
-  background-color: #161e2c;
+  background-color: var(--clr-mainDark);
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -69,7 +100,7 @@ body::-webkit-scrollbar {
 } */
 
 .totals-cont {
-  background-color: #1b2435;
+  background-color: var(--clr-main);
   text-align: center;
   padding: 15px 30px;
   border-top-right-radius: 5px;
@@ -77,7 +108,7 @@ body::-webkit-scrollbar {
 }
 
 .daily-cont {
-  background-color: #1b2435;
+  background-color: var(--clr-main);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 15px 30px;
@@ -85,7 +116,7 @@ body::-webkit-scrollbar {
 }
 
 .son-zamanlar {
-  background-color: #1b2435;
+  background-color: var(--clr-main);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 5px 20px;
@@ -99,7 +130,7 @@ body::-webkit-scrollbar {
   padding: 10px;
 }
 .son-hafta-report {
-  background-color: #161e2c;
+  background-color: var(--clr-mainDark);
   padding: 10px 20px;
   border-radius: 5px;
   display: flex;
@@ -120,7 +151,7 @@ body::-webkit-scrollbar {
 }
 
 .content-cont {
-  background-color: #161e2c;
+  background-color: var(--clr-mainDark);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 5px;
@@ -132,15 +163,15 @@ body::-webkit-scrollbar {
 }
 
 .main-content-cont {
-  background-color: #1b2435;
+  background-color: var(--clr-main);
   text-align: center;
   padding: 15px 30px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   max-height: 800px;
   overflow-y: scroll;
-  border-bottom: 10px solid #1b2435;
-  border-top: 10px solid #1b2435;
+  border-bottom: 10px solid var(--clr-main);
+  border-top: 10px solid var(--clr-main);
 }
 
 .main-content-cont::-webkit-scrollbar {
@@ -163,7 +194,7 @@ body::-webkit-scrollbar {
 .daily-report {
   display: flex;
   justify-content: space-between;
-  background-color: #161e2c;
+  background-color: var(--clr-mainDark);
   padding: 20px;
   border-radius: 5px;
   flex-wrap: wrap;
@@ -184,7 +215,7 @@ a {
 
 .nav-bar {
   width: 100%;
-  background-color: #1a202a;
+  background-color: var(--clr-navbar);
   height: 60px;
   position: absolute;
   left: 0;
@@ -216,7 +247,7 @@ a {
 }
 
 .archive {
-  background-color: #1b2435;
+  background-color: var(--clr-main);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 15px 30px;
@@ -228,7 +259,7 @@ a {
 }
 
 .haritalar {
-  background-color: #1b2435;
+  background-color: var(--clr-main);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 15px 30px;
@@ -274,13 +305,13 @@ svg {
 }
 
 .tooltip div {
-  color: #333a45;
+  color: rgb(58, 58, 58);
   font-weight: 700;
 }
 
 th {
   text-align: start;
-  background-color: #161e2c;
+  background-color: var(--clr-mainDark);
   font-weight: 700 !important;
 }
 
@@ -292,7 +323,7 @@ td {
 
 .table-cont {
   font-size: 0.8em;
-  background-color: #1b2435;
+  background-color: var(--clr-main);
   border-collapse: collapse;
   overflow: hidden;
   min-width: 100%;
@@ -301,7 +332,7 @@ td {
 
 .denemetb {
   font-size: 0.8em;
-  background-color: #1b2435;
+  background-color: var(--clr-main);
   border-collapse: collapse;
   overflow: hidden;
   min-width: 100%;
@@ -312,23 +343,23 @@ td {
 }
 
 .table-cont tbody tr:nth-of-type(even) {
-  background-color: #161e2c;
+  background-color: var(--clr-mainDark);
 }
 
 .table-vaka {
-  color: #38f3ea;
+  color: var(--clr-cases);
 }
 .table-vefat {
-  color: #f85656;
+  color: var(--clr-deaths);
 }
 .table-kritik {
-  color: #ff8a37;
+  color: var(--clr-critical);
 }
 .table-iyilesen {
-  color: rgb(96, 241, 67);
+  color: var(--clr-recovered);
 }
 .table-test {
-  color: rgb(195, 62, 235);
+  color: var(--clr-tested);
 }
 
 .aciklama {
@@ -361,7 +392,7 @@ td {
   position: absolute;
   bottom: 100%;
   left: 0;
-  background-color: #161e2c;
+  background-color: var(--clr-mainDark);
   padding: 10px;
   font-size: 12px;
   width: 300px;
@@ -409,6 +440,14 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
 
   .stats-ek-header {
     font-size: 14px !important;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 14px;
   }
 
   .container {

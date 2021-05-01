@@ -8,24 +8,24 @@ const toplamAsi = document.getElementById("toplam-asi");
 const toplamAsiKisi = document.getElementById("toplam-asi-kisi");
 const toplamAsiKisiYuzdesi = document.getElementById("toplam-asi-kisi-yuzdesi");
 
-const gunlukVaka = document.querySelector(".gunluk-vaka");
-const gunlukVefat = document.querySelector(".gunluk-vefat");
-const gunlukHasta = document.querySelector(".gunluk-hasta");
-const gunlukIyilesen = document.querySelector(".gunluk-iyilesen");
-const gunlukTest = document.querySelector(".gunluk-test");
-const gunlukAsilama = document.querySelector(".gunluk-asilama");
+const gunlukVaka = document.querySelectorAll(".gunluk-vaka");
+const gunlukVefat = document.querySelectorAll(".gunluk-vefat");
+const gunlukHasta = document.querySelectorAll(".gunluk-hasta");
+const gunlukIyilesen = document.querySelectorAll(".gunluk-iyilesen");
+const gunlukTest = document.querySelectorAll(".gunluk-test");
+const gunlukAsilama = document.querySelectorAll(".gunluk-asilama");
 
-const haftalikVaka = document.getElementById("haftalik-vaka");
-const haftalikVefat = document.getElementById("haftalik-vefat");
-const haftalikIyilesen = document.getElementById("haftalik-iyilesen");
-const haftalikTest = document.getElementById("haftalik-test");
-const haftalikAsilama = document.getElementById("haftalik-asilama");
+const haftalikVaka = document.querySelectorAll(".haftalik-vaka");
+const haftalikVefat = document.querySelectorAll(".haftalik-vefat");
+const haftalikIyilesen = document.querySelectorAll(".haftalik-iyilesen");
+const haftalikTest = document.querySelectorAll(".haftalik-test");
+const haftalikAsilama = document.querySelectorAll(".haftalik-asilama");
 
-const aylikVaka = document.getElementById("aylik-vaka");
-const aylikVefat = document.getElementById("aylik-vefat");
-const aylikIyilesen = document.getElementById("aylik-iyilesen");
-const aylikTest = document.getElementById("aylik-test");
-const aylikAsilama = document.getElementById("aylik-asilama");
+const aylikVaka = document.querySelectorAll(".aylik-vaka");
+const aylikVefat = document.querySelectorAll(".aylik-vefat");
+const aylikIyilesen = document.querySelectorAll(".aylik-iyilesen");
+const aylikTest = document.querySelectorAll(".aylik-test");
+const aylikAsilama = document.querySelectorAll(".aylik-asilama");
 
 const veriTarihi = document.getElementById("veri-tarihi");
 const nufus = document.getElementById("nufus");
@@ -44,11 +44,20 @@ fetch(
     toplamIyilesen.innerText = formatter.format(currentDay.totalRecovered);
     toplamTest.innerText = formatter.format(currentDay.totalTests);
 
-    gunlukVaka.innerText = "+" + formatter.format(currentDay.cases);
-    gunlukVefat.innerText = "+" + formatter.format(currentDay.deaths);
-    gunlukIyilesen.innerText = "+" + formatter.format(currentDay.recovered);
-    gunlukTest.innerText = "+" + formatter.format(currentDay.tests);
-    gunlukHasta.innerText = "+" + formatter.format(currentDay.patients);
+    gunlukVaka[0].innerText = "+" + formatter.format(currentDay.cases);
+    gunlukVaka[1].innerText = "+" + formatter.format(currentDay.cases);
+
+    gunlukVefat[0].innerText = "+" + formatter.format(currentDay.deaths);
+    gunlukVefat[1].innerText = "+" + formatter.format(currentDay.deaths);
+
+    gunlukIyilesen[0].innerText = "+" + formatter.format(currentDay.recovered);
+    gunlukIyilesen[1].innerText = "+" + formatter.format(currentDay.recovered);
+
+    gunlukTest[0].innerText = "+" + formatter.format(currentDay.tests);
+    gunlukTest[1].innerText = "+" + formatter.format(currentDay.tests);
+
+    gunlukHasta[0].innerText = "+" + formatter.format(currentDay.patients);
+    gunlukHasta[1].innerText = "+" + formatter.format(currentDay.patients);
 
     veriTarihi.innerHTML =
       '<i class="fas fa-calendar-alt"></i> ' +
@@ -139,22 +148,26 @@ fetch(
       );
 
       const haftalikVakaSayisi = haftalikVakaDizisi.reduce((a, b) => a + b, 0);
-      haftalikVaka.innerHTML = formatter.format(haftalikVakaSayisi);
+      haftalikVaka[0].innerHTML = formatter.format(haftalikVakaSayisi);
+      haftalikVaka[1].innerHTML = formatter.format(haftalikVakaSayisi);
 
       const haftalikVefatSayisi = haftalikVefatDizisi.reduce(
         (a, b) => a + b,
         0
       );
-      haftalikVefat.innerHTML = formatter.format(haftalikVefatSayisi);
+      haftalikVefat[0].innerHTML = formatter.format(haftalikVefatSayisi);
+      haftalikVefat[1].innerHTML = formatter.format(haftalikVefatSayisi);
 
       const haftalikIyilesenSayisi = haftalikIyilesenDizisi.reduce(
         (a, b) => a + b,
         0
       );
-      haftalikIyilesen.innerHTML = formatter.format(haftalikIyilesenSayisi);
+      haftalikIyilesen[0].innerHTML = formatter.format(haftalikIyilesenSayisi);
+      haftalikIyilesen[1].innerHTML = formatter.format(haftalikIyilesenSayisi);
 
       const haftalikTestSayisi = haftalikTestDizisi.reduce((a, b) => a + b, 0);
-      haftalikTest.innerHTML = formatter.format(haftalikTestSayisi);
+      haftalikTest[0].innerHTML = formatter.format(haftalikTestSayisi);
+      haftalikTest[1].innerHTML = formatter.format(haftalikTestSayisi);
     }
 
     let aylikVakaDizisi = [];
@@ -178,19 +191,23 @@ fetch(
       );
 
       const aylikVakaSayisi = aylikVakaDizisi.reduce((a, b) => a + b, 0);
-      aylikVaka.innerHTML = formatter.format(aylikVakaSayisi);
+      aylikVaka[0].innerHTML = formatter.format(aylikVakaSayisi);
+      aylikVaka[1].innerHTML = formatter.format(aylikVakaSayisi);
 
       const aylikVefatSayisi = aylikVefatDizisi.reduce((a, b) => a + b, 0);
-      aylikVefat.innerHTML = formatter.format(aylikVefatSayisi);
+      aylikVefat[0].innerHTML = formatter.format(aylikVefatSayisi);
+      aylikVefat[1].innerHTML = formatter.format(aylikVefatSayisi);
 
       const aylikIyilesenSayisi = aylikIyilesenDizisi.reduce(
         (a, b) => a + b,
         0
       );
-      aylikIyilesen.innerHTML = formatter.format(aylikIyilesenSayisi);
+      aylikIyilesen[0].innerHTML = formatter.format(aylikIyilesenSayisi);
+      aylikIyilesen[1].innerHTML = formatter.format(aylikIyilesenSayisi);
 
       const aylikTestSayisi = aylikTestDizisi.reduce((a, b) => a + b, 0);
-      aylikTest.innerHTML = formatter.format(aylikTestSayisi);
+      aylikTest[0].innerHTML = formatter.format(aylikTestSayisi);
+      aylikTest[1].innerHTML = formatter.format(aylikTestSayisi);
     }
   });
 
@@ -200,7 +217,10 @@ fetch(
   .then((result) => result.json())
   .then((data) => {
     toplamAsi.innerText = formatter.format(data.TUR.total_vaccinations);
-    gunlukAsilama.innerText = "+" + formatter.format(data.TUR.new_vaccinations);
+    gunlukAsilama[0].innerText =
+      "+" + formatter.format(data.TUR.new_vaccinations);
+    gunlukAsilama[1].innerText =
+      "+" + formatter.format(data.TUR.new_vaccinations);
     toplamAsiKisi.innerText = formatter.format(data.TUR.people_vaccinated);
     toplamAsiKisiYuzdesi.innerText =
       "%" + data.TUR.people_vaccinated_per_hundred;
