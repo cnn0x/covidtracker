@@ -53,7 +53,7 @@ body {
 .container {
   min-height: 100vh;
   background-color: #333a45;
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 4fr;
   padding-top: 70px;
@@ -352,7 +352,7 @@ td {
   border-radius: 5px;
   padding: 10px;
   color: white;
-  font-weight: 6 00;
+  font-weight: 600;
 }
 
 .aciklama:hover:after {
@@ -371,3 +371,101 @@ td {
 Yüz binde 20-49.99 arası vaka olan iller "orta riskli",
 Yüz binde 50-99.99 arası vakası bulunan iller "yüksek riskli",
 Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli" */
+
+@media all and (max-width: 1440px) {
+  svg {
+    transform: scale(1.2);
+  }
+
+  .risk-yy-1 {
+    font-size: 36px;
+  }
+  .risk-yy {
+    font-size: 12px;
+  }
+
+  .stats-header {
+    font-size: 21px !important;
+    line-height: 40px !important;
+  }
+
+  .stats-ek-header {
+    font-size: 12px !important;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  svg {
+    transform: scale(1);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .stats-header {
+    font-size: 28px !important;
+    line-height: 45px !important;
+  }
+
+  .stats-ek-header {
+    font-size: 14px !important;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+  }
+
+  .holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .totals-cont {
+    width: 95%;
+    border-radius: 5px;
+  }
+
+  .main-content-cont {
+    width: 95%;
+  }
+
+  .content-cont {
+    max-width: 320px;
+  }
+
+  .news-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 0;
+  }
+
+  .aaa {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .daily-cont {
+    margin-top: 10px;
+    max-width: 100vw;
+    width: 95%;
+  }
+
+  .haritalar {
+    max-width: 100vw;
+    width: 95%;
+  }
+
+  .son-zamanlar {
+    max-width: 100vw;
+    width: 95%;
+  }
+
+  .archive {
+    max-width: 100vw;
+    width: 95%;
+  }
+}
