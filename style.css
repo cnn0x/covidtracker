@@ -475,6 +475,12 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
     padding-right: 10px !important;
     padding: 0;
   }
+  .son-zamanlar-mobile .son-hafta div:nth-of-type(1) {
+    text-align: center;
+  }
+  .son-zamanlar-mobile .son-ay div:nth-of-type(1) {
+    text-align: center;
+  }
 
   .son-zamanlar-desktop {
     display: none;
