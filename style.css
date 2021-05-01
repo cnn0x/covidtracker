@@ -184,7 +184,7 @@ a {
 
 .nav-bar {
   width: 100%;
-  background-color: #21252a;
+  background-color: #1a202a;
   height: 60px;
   position: absolute;
   left: 0;
@@ -399,10 +399,6 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
   svg {
     transform: scale(1);
   }
-}
-
-.nav-bar {
-  display: none;
 }
 
 @media all and (max-width: 768px) {

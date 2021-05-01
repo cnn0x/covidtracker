@@ -8,12 +8,12 @@ const toplamAsi = document.getElementById("toplam-asi");
 const toplamAsiKisi = document.getElementById("toplam-asi-kisi");
 const toplamAsiKisiYuzdesi = document.getElementById("toplam-asi-kisi-yuzdesi");
 
-const gunlukVaka = document.querySelectorAll(".gunluk-vaka");
+const gunlukVaka = document.querySelector(".gunluk-vaka");
 const gunlukVefat = document.querySelector(".gunluk-vefat");
-const gunlukHasta = document.querySelectorAll(".gunluk-hasta");
-const gunlukIyilesen = document.querySelectorAll(".gunluk-iyilesen");
-const gunlukTest = document.querySelectorAll(".gunluk-test");
-const gunlukAsilama = document.querySelectorAll(".gunluk-asilama");
+const gunlukHasta = document.querySelector(".gunluk-hasta");
+const gunlukIyilesen = document.querySelector(".gunluk-iyilesen");
+const gunlukTest = document.querySelector(".gunluk-test");
+const gunlukAsilama = document.querySelector(".gunluk-asilama");
 
 const haftalikVaka = document.getElementById("haftalik-vaka");
 const haftalikVefat = document.getElementById("haftalik-vefat");
