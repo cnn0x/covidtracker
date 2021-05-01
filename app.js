@@ -229,7 +229,7 @@ fetch(
   .then((result) => result.json())
   .then((data) => {
     dunyaAsi.innerText = formatter.format(
-      data[199].data[data[199].data.length - 1].total_vaccinations
+      data[200].data[data[200].data.length - 1].total_vaccinations
     );
   });
 
