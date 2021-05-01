@@ -266,6 +266,7 @@ svg {
   position: fixed;
   pointer-events: none;
   transition: 0.1s;
+  display: none;
 }
 
 #yy-active {
@@ -398,6 +399,10 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
   svg {
     transform: scale(1);
   }
+}
+
+.nav-bar {
+  display: none;
 }
 
 @media all and (max-width: 768px) {
@@ -534,5 +539,51 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
   svg {
     transform: scale(0.7);
     position: absolute;
+  }
+
+  .risk-bari {
+    width: 200px !important;
+    bottom: 10px !important;
+    right: 20px !important;
+  }
+
+  .haritalar-header {
+    top: 10px !important;
+    left: 20px !important;
+  }
+
+  .haritalar div:nth-of-type(2) {
+    top: 10px;
+    right: 20px;
+  }
+
+  .haritalar div:nth-of-type(3) {
+    bottom: 10px;
+    left: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .aciklama {
+    font-size: 20px;
+  }
+  .haritalar-header div:nth-of-type(1) {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+  .haritalar-header div:nth-of-type(2) {
+    font-size: 12px !important;
+  }
+  svg {
+    transform: scale(0.5);
+  }
+  .haritalar {
+    height: 450px;
+  }
+  .risk-yy {
+    font-size: 8px;
+  }
+  .risk-yy-1 {
+    font-size: 24px;
   }
 }
