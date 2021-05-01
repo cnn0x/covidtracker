@@ -55,7 +55,7 @@ body {
   background-color: #333a45;
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 1fr 4fr;
   padding-top: 70px;
   column-gap: 10px;
   padding-bottom: 100px;
@@ -153,6 +153,7 @@ body::-webkit-scrollbar {
 .news-img {
   width: 100%;
   border-radius: 5px;
+  margin-bottom: 5px;
 }
 .news-description {
   margin-top: 5px;
@@ -185,7 +186,7 @@ a {
   width: 100%;
   background-color: #21252a;
   height: 60px;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   z-index: 5;
@@ -193,10 +194,6 @@ a {
   align-items: center;
   padding: 0 20px;
   justify-content: space-between;
-}
-
-.nav-bar a {
-  margin: 0 10px;
 }
 
 .flag {
@@ -367,6 +364,7 @@ td {
   padding: 10px;
   font-size: 12px;
   width: 300px;
+  z-index: 2;
 }
 
 /* Yüz binde 19.99'un altında vaka görülen iller "düşük riskli",

@@ -48,16 +48,15 @@ fetch(
     gunlukVefat.innerText = "+" + formatter.format(currentDay.deaths);
     gunlukIyilesen.innerText = "+" + formatter.format(currentDay.recovered);
     gunlukTest.innerText = "+" + formatter.format(currentDay.tests);
+    gunlukHasta.innerText = "+" + formatter.format(currentDay.patients);
 
     veriTarihi.innerHTML =
       '<i class="fas fa-calendar-alt"></i> ' +
       currentDay.date +
       " tarihinde güncellendi.";
-    gunlukHasta.innerText = "+" + formatter.format(currentDay.patients);
 
     const veri = Object.keys(data).reverse();
     buildTable(veri);
-
     function buildTable(veri) {
       var table = document.getElementById("archive-table");
       for (let i = 0; i < Object.keys(data).length; i++) {
@@ -89,7 +88,6 @@ fetch(
     }
 
     buildTable2(veri);
-
     function buildTable2(veri) {
       var table = document.getElementById("archive-table");
       for (let a = 260; a < Object.keys(data).length; a++) {
@@ -115,7 +113,6 @@ fetch(
         table.innerHTML += row;
       }
     }
-
     setTimeout(() => {
       document.querySelector(".loading").style.display = "none";
       document.body.style.overflowY = "scroll";
