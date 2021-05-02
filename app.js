@@ -27,7 +27,7 @@ const aylikIyilesen = document.querySelectorAll(".aylik-iyilesen");
 const aylikTest = document.querySelectorAll(".aylik-test");
 const aylikAsilama = document.querySelectorAll(".aylik-asilama");
 
-const veriTarihi = document.getElementById("veri-tarihi");
+const veriTarihi = document.querySelectorAll(".veri-tarihi");
 const nufus = document.getElementById("nufus");
 const formatter = new Intl.NumberFormat("en");
 
@@ -59,7 +59,11 @@ fetch(
     gunlukHasta[0].innerText = "+" + formatter.format(currentDay.patients);
     gunlukHasta[1].innerText = "+" + formatter.format(currentDay.patients);
 
-    veriTarihi.innerHTML =
+    veriTarihi[0].innerHTML =
+      '<i class="fas fa-calendar-alt"></i> ' +
+      currentDay.date +
+      " tarihinde güncellendi.";
+    veriTarihi[1].innerHTML =
       '<i class="fas fa-calendar-alt"></i> ' +
       currentDay.date +
       " tarihinde güncellendi.";
@@ -234,25 +238,23 @@ const dunyaVaka = document.getElementById("dunya-vaka");
 const dunyaVefat = document.getElementById("dunya-vefat");
 const dunyaIyilesen = document.getElementById("dunya-iyilesen");
 const dunyaAsi = document.getElementById("dunya-asi");
+const dunyaTests = document.getElementById("dunya-tests");
+const dunyaKritik = document.getElementById("dunya-kritik");
 
-fetch("https://covid19.mathdro.id/api")
+fetch("https://cov19.cc/report.json")
   .then((result) => result.json())
   .then((data) => {
-    dunyaVaka.innerText = formatter.format(data.confirmed.value);
-    dunyaVefat.innerText = formatter.format(data.deaths.value);
-    dunyaIyilesen.innerText = formatter.format(data.recovered.value);
-  });
-
-fetch(
-  "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.json"
-)
-  .then((result) => result.json())
-  .then((data) => {
-    dunyaAsi.innerText = formatter.format(
-      data[200].data[data[200].data.length - 1].total_vaccinations
+    dunyaVaka.innerText = formatter.format(data.regions.world.totals.confirmed);
+    dunyaVefat.innerText = formatter.format(data.regions.world.totals.deaths);
+    dunyaIyilesen.innerText = formatter.format(
+      data.regions.world.totals.recovered
+    );
+    dunyaAsi.innerText = formatter.format(data.regions.world.totals.vaccinated);
+    dunyaTests.innerText = formatter.format(data.regions.world.totals.tests);
+    dunyaKritik.innerText = formatter.format(
+      data.regions.world.totals.critical
     );
   });
-
 const toolTip = document.querySelector(".tooltip");
 const sehirText = document.querySelector(".sehir");
 const riskText = document.querySelector(".risk");

@@ -31,6 +31,28 @@
   color: var(--clr-vaccinated);
 }
 
+body {
+  background-color: var(--clr-mainDark);
+}
+
+.credit {
+  position: relative;
+  bottom: 10px;
+  background-color: var(--clr-mainDark);
+  display: flex;
+  justify-content: center;
+}
+
+.credit-link {
+  color: #5b5f68;
+  font-weight: 600;
+}
+
+.credit-link:hover {
+  color: gold;
+  cursor: pointer;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -90,6 +112,12 @@ body {
   padding-top: 70px;
   column-gap: 10px;
   padding-bottom: 100px;
+}
+.about-container {
+  min-height: 100vh;
+  background-color: var(--clr-mainDark);
+  width: 100vw;
+  padding-top: 70px;
 }
 
 /* .container::-webkit-scrollbar {
@@ -225,6 +253,10 @@ a {
   align-items: center;
   padding: 0 20px;
   justify-content: space-between;
+}
+.nav-bar a {
+  margin-left: 20px;
+  font-weight: 700;
 }
 
 .flag {
