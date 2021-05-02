@@ -82,10 +82,29 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--clr-mainDark);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spinner {
+  font-size: 56px;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -113,11 +132,30 @@ body {
   column-gap: 10px;
   padding-bottom: 100px;
 }
+
 .about-container {
   min-height: 100vh;
   background-color: var(--clr-mainDark);
   width: 100vw;
-  padding-top: 70px;
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-container img {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid gold;
+}
+
+.about-container h1 {
+  margin-top: 10px;
+  color: #dddddd;
+}
+.about-container p {
+  max-width: 600px;
 }
 
 /* .container::-webkit-scrollbar {
@@ -257,6 +295,10 @@ a {
 .nav-bar a {
   margin-left: 20px;
   font-weight: 700;
+}
+
+.nav-bar a:hover {
+  color: gold;
 }
 
 .flag {
@@ -641,6 +683,18 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
   .aciklama {
     font-size: 20px;
   }
+  .nav-bar h1 {
+    font-size: 24px;
+  }
+
+  .nav-bar a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
   .haritalar-header div:nth-of-type(1) {
     font-size: 18px !important;
     line-height: 30px !important;
