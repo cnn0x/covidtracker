@@ -120,6 +120,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(53, 55, 71);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: gold;
 }
@@ -144,6 +145,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  overflow: scroll;
 }
 
 .about-container img {
@@ -306,6 +308,7 @@ a {
 .navigation-container {
   display: none;
   flex-direction: column;
+  padding: 10px;
 }
 
 .nc-active {
@@ -316,7 +319,7 @@ a {
   font-size: 20px;
   border: 2px solid gold;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px 0;
 }
 
 .flag {
@@ -525,6 +528,18 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
 }
 
 @media all and (max-width: 768px) {
+  .nav-bar h1 {
+    font-size: 28px;
+  }
+
+  .nav-bar a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
   .stats-header {
     font-size: 28px !important;
     line-height: 45px !important;
@@ -535,11 +550,11 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
   }
 
   th {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   td {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .container {
@@ -704,21 +719,23 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
   .nav-bar h1 {
     font-size: 24px;
   }
-
   .nav-bar a {
     display: none;
   }
-
   .hamburger {
     display: block !important;
   }
-
   .haritalar-header div:nth-of-type(1) {
     font-size: 18px !important;
     line-height: 30px !important;
   }
   .haritalar-header div:nth-of-type(2) {
     font-size: 12px !important;
+  }
+
+  .archive-header {
+    font-size: 18px !important;
+    line-height: 30px !important;
   }
   svg {
     transform: scale(0.5);
@@ -731,5 +748,15 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
   }
   .risk-yy-1 {
     font-size: 24px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  th {
+    font-size: 8px;
+  }
+
+  td {
+    font-size: 8px;
   }
 }
