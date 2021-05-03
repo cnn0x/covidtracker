@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covid Hakkinda | Covtr.net</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link
       href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"
       rel="stylesheet"
@@ -14,20 +14,42 @@
   <body>
     <div class="nav-bar">
       <h1 style="flex: 1">
-        <a href="index.html"
-          ><i style="color: gold" class="fad fa-biohazard"></i> Covtr.net</a
-        >
+        <i style="color: gold" class="fad fa-biohazard"></i> Covtr.net
       </h1>
-      <a href="about.html">Hakkinda</a>
-      <a href="#">Kaynaklar</a>
+      <div onclick="openNav()" style="display: none" class="hamburger">
+        <i style="color: gold; font-size: 24px" class="openc fas fa-bars"></i>
+      </div>
+      <a style="color: gold" href="index.html"
+        ><i style="color: gold" class="fas fa-home-lg-alt"></i> Anasayfa</a
+      >
+      <a href="./abt/about.html"
+        ><i class="fas fa-address-card"></i> Hakkında</a
+      >
+      <a href="/kaynaklar"><i class="fas fa-book-spells"></i> Kaynaklar</a>
       <a
         target="_blank"
         href="https://www.icisleri.gov.tr/81-il-valiligine-tam-kapanma-tedbirleri-genelgesi-gonderildi"
-        >Kisitlamalar</a
+        ><i class="fas fa-do-not-enter"></i> Kısıtlamalar</a
+      >
+    </div>
+    <div style="margin-bottom: 10px" class="totals-cont navigation-container">
+      <a style="color: gold; margin-bottom: 10px" href="index.html"
+        ><i style="color: gold" class="fas fa-home-lg-alt"></i> Anasayfa</a
+      >
+      <a style="margin-bottom: 10px" href="./abt/about.html"
+        ><i class="fas fa-address-card"></i> Hakkında</a
+      >
+      <a style="margin-bottom: 10px" href="/kaynaklar"
+        ><i class="fas fa-book-spells"></i> Kaynaklar</a
+      >
+      <a
+        target="_blank"
+        href="https://www.icisleri.gov.tr/81-il-valiligine-tam-kapanma-tedbirleri-genelgesi-gonderildi"
+        ><i class="fas fa-do-not-enter"></i> Kısıtlamalar</a
       >
     </div>
     <div class="about-container">
-      <div><img src="./IMG_20210412_100619_916.jpg" alt="" /></div>
+      <div><img src="/IMG_20210412_100619_916.jpg" alt="" /></div>
       <h1 style="margin-bottom: 5px">
         <i class="fas fa-meteor"></i> Fatih Can
       </h1>

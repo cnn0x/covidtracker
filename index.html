@@ -12,9 +12,7 @@
     />
   </head>
   <body>
-    <div class="loading">
-      <i class="spinner fad fa-spinner-third"></i>
-    </div>
+    <div class="loading"><img class="spinner" src="/RgwrS.png" alt="" /></div>
     <div class="tooltip">
       <div class="sehir"></div>
       <div class="risk"></div>
@@ -24,18 +22,42 @@
         <h1 style="flex: 1">
           <i style="color: gold" class="fad fa-biohazard"></i> Covtr.net
         </h1>
-        <div style="display: none" class="hamburger">
-          <i style="color: gold; font-size: 24px" class="fas fa-bars"></i>
+        <div onclick="openNav()" style="display: none" class="hamburger">
+          <i style="color: gold; font-size: 24px" class="openc fas fa-bars"></i>
         </div>
-        <a href="about.html">Hakkinda</a>
-        <a href="/kaynaklar">Kaynaklar</a>
+        <a style="color: gold" href="index.html"
+          ><i style="color: gold" class="fas fa-home-lg-alt"></i> Anasayfa</a
+        >
+        <a href="./abt/about.html"
+          ><i class="fas fa-address-card"></i> Hakkında</a
+        >
+        <a href="/kaynaklar"><i class="fas fa-book-spells"></i> Kaynaklar</a>
         <a
           target="_blank"
           href="https://www.icisleri.gov.tr/81-il-valiligine-tam-kapanma-tedbirleri-genelgesi-gonderildi"
-          >Kisitlamalar</a
+          ><i class="fas fa-do-not-enter"></i> Kısıtlamalar</a
         >
       </div>
       <div class="holder">
+        <div
+          style="margin-bottom: 10px"
+          class="totals-cont navigation-container"
+        >
+          <a style="color: gold; margin-bottom: 10px" href="index.html"
+            ><i style="color: gold" class="fas fa-home-lg-alt"></i> Anasayfa</a
+          >
+          <a style="margin-bottom: 10px" href="./abt/about.html"
+            ><i class="fas fa-address-card"></i> Hakkında</a
+          >
+          <a style="margin-bottom: 10px" href="/kaynaklar"
+            ><i class="fas fa-book-spells"></i> Kaynaklar</a
+          >
+          <a
+            target="_blank"
+            href="https://www.icisleri.gov.tr/81-il-valiligine-tam-kapanma-tedbirleri-genelgesi-gonderildi"
+            ><i class="fas fa-do-not-enter"></i> Kısıtlamalar</a
+          >
+        </div>
         <div class="totals-cont">
           <div
             class="stats-header"
@@ -337,7 +359,7 @@
             >11111</span
           >
           <div style="margin-top: 20px; font-size: 18px; font-weight: 700">
-            <i class="clr-critical fas fa-skull-crossbones"></i> Kritik Hasta
+            <i style="color: #ff8a37" class="fas fa-heartbeat"></i> Kritik Hasta
           </div>
           <span
             class="clr-critical"
@@ -356,7 +378,7 @@
           >
 
           <div style="margin-top: 20px; font-size: 18px; font-weight: 700">
-            <i class="clr-tested fas fa-hand-holding-medical"></i> Test
+            <i style="color: rgb(195, 62, 235)" class="fas fa-vial"></i> Test
           </div>
           <span
             class="clr-tested"

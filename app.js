@@ -31,6 +31,15 @@ const veriTarihi = document.querySelectorAll(".veri-tarihi");
 const nufus = document.getElementById("nufus");
 const formatter = new Intl.NumberFormat("en");
 
+const navCont = document.querySelector(".navigation-container");
+const icon = document.querySelector(".openc");
+
+function openNav() {
+  navCont.classList.toggle("nc-active");
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-times");
+}
+
 fetch(
   "https://raw.githubusercontent.com/ozanerturk/covid19-turkey-api/master/dataset/timeline.json"
 )
