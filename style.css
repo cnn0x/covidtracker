@@ -145,7 +145,7 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow: scroll;
-  padding: 70px 20px;
+  padding: 70px 0;
 }
 
 .about-container img {
