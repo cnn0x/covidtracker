@@ -140,12 +140,12 @@ body {
   min-height: 100vh;
   background-color: var(--clr-mainDark);
   width: 100vw;
-  padding: 150px 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   overflow: scroll;
+  padding: 0 20px;
 }
 
 .about-container img {
