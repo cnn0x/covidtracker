@@ -528,6 +528,10 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
 }
 
 @media all and (max-width: 768px) {
+  .daily-report {
+    background-color: var(--clr-main);
+  }
+
   .nav-bar h1 {
     font-size: 28px;
   }
