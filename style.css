@@ -10,8 +10,11 @@
   --clr-recovered: #60f143;
   --clr-tested: #c33eeb;
   --clr-vaccinated: #30acf3;
+  --clr-t: gold;
 }
-
+.clr-t {
+  color: var(--clr-t);
+}
 .clr-cases {
   color: var(--clr-cases);
 }
@@ -199,7 +202,23 @@ body::-webkit-scrollbar {
   width: 50%;
   padding: 10px;
 }
+.son-hafta-t {
+  width: 100%;
+  padding: 10px;
+}
 .son-hafta-report {
+  background-color: var(--clr-mainDark);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.son-hafta-t-report {
   background-color: var(--clr-mainDark);
   padding: 10px 20px;
   border-radius: 5px;
