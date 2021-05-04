@@ -204,7 +204,6 @@ body::-webkit-scrollbar {
 }
 .son-hafta-t {
   width: 100%;
-  padding: 10px;
 }
 .son-hafta-report {
   background-color: var(--clr-mainDark);
