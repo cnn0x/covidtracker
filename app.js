@@ -320,7 +320,7 @@ for (let i = 0; i < paths.length; i++) {
 
 const riskYuzdesi = document.querySelector(".risk-yy-1");
 
-riskYuzdesi.innerText = "%" + Math.floor((79 * 100) / 81);
+riskYuzdesi.innerText = "%" + Math.floor((76 * 100) / 81);
 
 const newsContainer = document.querySelector(".news-cont");
 
