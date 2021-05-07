@@ -100,7 +100,7 @@ body {
   animation: spinner 0.8s linear infinite;
   -webkit-filter: invert(100%); /* Safari/Chrome */
   filter: invert(100%);
-  width: 70px;
+  width: 50px;
 }
 
 @keyframes spinner {
@@ -435,7 +435,7 @@ td {
 }
 
 .table-cont {
-  font-size: 0.8em;
+  border: 2px solid var(--clr-mainDark);
   background-color: var(--clr-main);
   border-collapse: collapse;
   overflow: hidden;
