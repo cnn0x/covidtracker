@@ -369,6 +369,7 @@ a {
   max-height: 70vh;
   border-bottom: 5px solid #1b2435;
   position: relative;
+  border-right: 2px solid var(--clr-main);
 }
 
 .haritalar {
@@ -558,7 +559,7 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
     font-size: 28px;
   }
 
-  .nav-bar a {
+  .nav-bar a:not(:first-child) {
     display: none;
   }
 
@@ -749,11 +750,8 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
   .aciklama {
     font-size: 20px;
   }
-  .nav-bar h1 {
-    font-size: 24px;
-  }
-  .nav-bar a {
-    display: none;
+  .nav-bar h1 > a {
+    font-size: 24px !important;
   }
   .hamburger {
     display: block !important;
@@ -791,5 +789,27 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
 
   td {
     font-size: 8px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .stats-header {
+    font-size: 24px !important;
+    line-height: 35px;
+  }
+  .stats-ek-header {
+    font-size: 12px !important;
+  }
+
+  .totals-cont span {
+    font-size: 38px !important;
+  }
+
+  .d-r-header div:nth-of-type(1) {
+    font-size: 24px !important;
+    line-height: 35px;
+  }
+  .d-r-header div:nth-of-type(2) {
+    font-size: 12px !important;
   }
 }
