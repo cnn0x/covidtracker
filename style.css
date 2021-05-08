@@ -523,6 +523,14 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
     transform: scale(1.2);
   }
 
+  .haritalar-header div:nth-of-type(1) {
+    font-size: 21px !important;
+    line-height: 40px !important;
+  }
+  .haritalar-header div:nth-of-type(2) {
+    font-size: 12px !important;
+  }
+
   .risk-yy-1 {
     font-size: 36px;
   }
@@ -530,19 +538,83 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
     font-size: 12px;
   }
 
-  .stats-header {
+  .totals-cont span {
+    font-size: 48px !important;
+  }
+  .totals-cont div {
+    font-size: 14px !important;
+  }
+  .daily-cont-desktop span {
+    font-size: 24px !important;
+  }
+  .daily-cont-desktop div {
+    font-size: 12px !important;
+  }
+  .son-hafta-report div span {
+    font-size: 18px !important;
+  }
+  .son-hafta-report div div {
+    font-size: 8px !important;
+  }
+
+  .table-cont {
+    font-size: 14px;
+  }
+
+  .totals-cont div:nth-of-type(1) {
+    font-size: 21px !important;
+    line-height: 40px !important;
+  }
+  .totals-cont div:nth-of-type(2) {
+    font-size: 12px !important;
+  }
+  .archive div:nth-of-type(1) {
     font-size: 21px !important;
     line-height: 40px !important;
   }
 
-  .stats-ek-header {
+  .daily-cont-desktop .d-r-header div:nth-of-type(1) {
+    font-size: 21px !important;
+    line-height: 40px !important;
+  }
+  .daily-cont-desktop .d-r-header div:nth-of-type(2) {
     font-size: 12px !important;
   }
 }
 
 @media all and (max-width: 1024px) {
+  .totals-cont span {
+    font-size: 56px !important;
+  }
+  .totals-cont div {
+    font-size: 18px !important;
+  }
+
+  .son-hafta-report div span {
+    font-size: 28px !important;
+  }
+  .son-hafta-report div div {
+    font-size: 14px !important;
+  }
+
+  .daily-cont-mobile .d-r-header div:nth-of-type(1) {
+    font-size: 21px !important;
+    line-height: 40px !important;
+  }
+  .daily-cont-mobile .d-r-header div:nth-of-type(2) {
+    font-size: 12px !important;
+  }
+
   svg {
     transform: scale(1);
+  }
+
+  .container {
+    display: block;
+  }
+
+  .daily-cont-desktop {
+    margin-top: 10px;
   }
 }
 
@@ -793,6 +865,17 @@ Yüz binde 100'ün üstünde vaka seyri görülen iller ise "çok yüksek riskli
 }
 
 @media all and (max-width: 400px) {
+  .son-hafta-report div span {
+    font-size: 18px !important;
+  }
+  .son-hafta-report div div {
+    font-size: 12px !important;
+  }
+
+  svg {
+    transform: scale(0.4);
+  }
+
   .stats-header {
     font-size: 24px !important;
     line-height: 35px;
